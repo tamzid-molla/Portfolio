@@ -1,0 +1,51 @@
+/* Import Font  */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+@import "tailwindcss";
+@plugin "daisyui";
+
+/* Theme Customizations  */
+@theme {
+  --color-background: #0f172a; /*  full website background */
+  --color-cardBackground: #1e293b; /* card background */ 
+  --color-primaryText: #f8fafc;  /* button and navbar text color  */
+  --color-secondaryText: #94a3b8; /* maximum text color */
+  --color-Accent: #00D3BB;  /* accent color  */
+}
+
+* {
+  font-family: "Roboto", sans-serif;
+}
+.font_headers {
+  font-family: "Inter", sans-serif;
+}
+
+.nav-link {
+  position: relative;
+  display: inline-block;
+  transition: color 0.1s ease;
+}
+.nav-link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0px;
+  width: 0%;
+  height: 2px;
+  background-color: #00D3BB; 
+  transition: width 0.4s ease;
+}
+.nav-link:hover {
+  color: #00D3BB; 
+}
+.nav-link:hover::after {
+  width: 100%;
+}
+.nav-link.active {
+  color: #00D3BB;
+}
+.nav-link.active::after {
+  width: 100%;
+}
+
+

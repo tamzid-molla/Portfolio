@@ -1,0 +1,74 @@
+[
+    {
+    "projectName": "LitShelf",
+    "title": "MERN Stack",
+    "projectImage": "https://i.ibb.co/wZS9pnk2/Screenshot-351.png",
+    "id": 1,
+    "details": {
+      "techStack": [
+        "React", "Tailwind CSS", "Firebase Auth", "Node.js", "Express.js", "MongoDB", "Framer Motion"
+      ],
+      "description": "LitShelf is a full-stack reading tracker and virtual bookshelf. Users can log reading progress, add reviews, organize books, and visualize reading stats.",
+      "liveLink": "https://assignment11-tamzid.surge.sh/",
+      "githubLink": "https://github.com/tamzid-molla/LitShelf",
+      "challenges": [
+        "Building a responsive bookshelf interface with categories",
+        "Securing user data and Firebase JWT validation",
+        "Designing insightful reading analytics with charts"
+      ],
+      "futurePlans": [
+        "Social features – follow friends and see their shelves",
+        "Gamify reading goals with badges",
+        "Integrate book APIs like Google Books for live search"
+      ]
+    }
+  },
+  
+  {
+    "projectName": "PlantPal",
+    "title": "MERN Stack",
+    "projectImage": "https://i.ibb.co/7dXxm4Q7/Screenshot-349.png",
+    "id": 2,
+    "details": {
+      "techStack": [
+        "React", "Tailwind CSS", "Firebase Auth", "Node.js", "Express.js", "MongoDB", "Lottie", "Swiper.js"
+      ],
+      "description": "PlantPal is a plant care tracker app allowing users to log, monitor, and schedule care tasks. Built for plant lovers to manage their green companions.",
+      "liveLink": "https://assignment10-tamzid.surge.sh/",
+      "githubLink": "https://github.com/tamzid-molla/PlantPal",
+      "challenges": [
+        "Implementing reminder logic for watering/fertilizing",
+        "Securing private plant data for users",
+        "Creating dynamic and themed UI for plant types"
+      ],
+      "futurePlans": [
+        "Integrate calendar sync for reminders",
+        "Add image uploads for plant profiles",
+        "Introduce AI health diagnosis for plants"
+      ]
+    }
+  },
+  {
+    "projectName": "JOB S Y",
+    "title": "Frontend",
+    "projectImage": "https://i.ibb.co/S448mLJp/Screenshot-347.png",
+    "id": 3,
+    "details": {
+      "techStack": [
+        "React", "Tailwind CSS", "DaisyUI", "Firebase", "Framer Motion"],
+      "description": "JOB S Y is a job platform that connects global job seekers with top employers. It features secure login, curated job listings, user profiles, blogs, and more.",
+      "liveLink": "https://tamzidassignment0009.surge.sh/",
+      "githubLink": "https://github.com/tamzid-molla/Jobsy",
+      "challenges": [
+        "Creating user role-based access for job applications",
+        "Handling protected routes for unauthenticated users",
+        "Building responsive layouts across screen sizes"
+      ],
+      "futurePlans": [
+        "Add AI-powered job recommendation engine",
+        "Employer dashboard with posting and analytics",
+        "In-app messaging between companies and applicants"
+      ]
+    }
+  }
+]
