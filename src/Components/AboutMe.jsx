@@ -6,7 +6,7 @@ const AboutMe = () => {
       id="about"
       className=" px-5 min-h-screen flex justify-center items-center w-full"
     >
-      <div className="flex w-full items-center mt-20 justify-center">
+      <div data-aos='zoom-in'  className="flex w-full items-center mt-20 justify-center">
       
         <div className="relative group w-11/12 md:w-10/12 lg:w-9/12">
           <div

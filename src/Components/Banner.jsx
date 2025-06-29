@@ -5,7 +5,7 @@ import heroImage from '../assets/portfolio.png';
 
 const HeroSection = () => {
   return (
-    <section className="min-h-screen pt-28 flex flex-col items-center justify-center text-center px-4 overflow-hidden">
+    <section className="min-h-screen snap-start pt-28 flex flex-col items-center justify-center text-center px-4 overflow-hidden">
       
       {/* Profile Image */}
       <img

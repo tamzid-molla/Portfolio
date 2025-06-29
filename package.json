@@ -13,6 +13,7 @@
     "@emailjs/browser": "^4.4.1",
     "@ramonak/react-progress-bar": "^5.4.0",
     "@tailwindcss/vite": "^4.1.11",
+    "aos": "^2.3.4",
     "bootstrap": "^5.3.7",
     "daisyui": "^5.0.43",
     "emailjs-com": "^3.2.0",

@@ -47,7 +47,7 @@ const Skills = () => {
       </p>
       {/* Frontend Card */}
       <div className="container px-3 mt-20 mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-        <div className="bg-gradient-to-r from-background to-cardBackground p-6 rounded-2xl border border-accent/20 shadow-2xl shadow-accent/30 ">
+        <div data-aos='fade-up' data-aos-delay="200" className="bg-gradient-to-r from-background to-cardBackground p-6 rounded-2xl border border-accent/20 shadow-2xl shadow-accent/30 ">
           <h3 className="text-xl text-primaryText font-semibold mb-4">
             Frontend
           </h3>
@@ -76,7 +76,7 @@ const Skills = () => {
         </div>
 
         {/* Backend Card */}
-        <div className="bg-cardBackground  border border-accent/20 relative p-6 rounded-2xl shadow-2xl shadow-accent/30 ">
+        <div data-aos='fade-up' data-aos-delay="400" className="bg-cardBackground  border border-accent/20 relative p-6 rounded-2xl shadow-2xl shadow-accent/30 ">
           <h3 className="text-xl text-primaryText font-semibold mb-4">
             Backend
           </h3>
@@ -105,7 +105,7 @@ const Skills = () => {
         </div>
 
         {/* Tools Card */}
-        <div className="bg-gradient-to-r from-cardBackground to-background p-6 rounded-2xl border border-accent/20 shadow-2xl shadow-accent/30">
+        <div data-aos='fade-up' data-aos-delay="600" className="bg-gradient-to-r from-cardBackground to-background p-6 rounded-2xl border border-accent/20 shadow-2xl shadow-accent/30">
           <h3 className="text-xl text-primaryText font-semibold mb-4">
             Tools & Platforms
           </h3>

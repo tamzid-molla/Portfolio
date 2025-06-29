@@ -16,6 +16,11 @@
 * {
   font-family: "Roboto", sans-serif;
 }
+
+html{
+  scroll-behavior: smooth;
+}
+
 .font_headers {
   font-family: "Inter", sans-serif;
 }
@@ -47,5 +52,4 @@
 .nav-link.active::after {
   width: 100%;
 }
-
 

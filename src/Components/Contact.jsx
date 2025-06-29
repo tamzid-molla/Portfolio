@@ -40,7 +40,7 @@ const Contact = () => {
         </p>
 
         <div className="grid md:grid-cols-2 gap-10">
-          <div className="space-y-6">
+          <div data-aos='fade-right' className="space-y-6">
             <div className="bg-cardBackground p-5 rounded-xl flex items-start gap-4">
               <MdEmail className="text-2xl text-Accent" />
               <div>
@@ -81,7 +81,7 @@ const Contact = () => {
           </div>
 
           {/* Right Side - Contact Form */}
-          <div className="bg-cardBackground p-8 rounded-xl">
+          <div data-aos='fade-left' className="bg-cardBackground p-8 rounded-xl">
                       <h3 className="text-2xl font-semibold mb-6">Send Message</h3>
                       
             <form onSubmit={handleEmail} className="space-y-4">
