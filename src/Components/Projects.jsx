@@ -13,8 +13,9 @@ const Projects = () => {
   return (
     <section
       id="projects"
-      className="mb-20 pt-24 container mx-auto px-5 min-h-screen bg-background text-center">
-      <h2 className="text-3xl md:text-4xl font-bold mb-4 text-Accent">
+      className="mt-20 md:mt-0 flex justify-center items-center container mx-auto px-5 min-h-screen bg-background text-center">
+          <div className="">
+              <h2 className="text-3xl md:text-4xl font-bold mb-4 text-Accent">
         Projects
       </h2>
       <p className="text-secondaryText mb-12">
@@ -78,6 +79,7 @@ const Projects = () => {
   </div>
 </div>
         ))}
+      </div>
       </div>
     </section>
   );

@@ -1,12 +1,35 @@
 import React from "react";
 import { MdEmail, MdLocationOn } from "react-icons/md";
 import { BsFillTelephoneFill } from "react-icons/bs";
-import { FaLinkedin, FaGithub, FaTwitter, FaInstagram } from "react-icons/fa";
+import { FaLinkedin, FaGithub, FaFacebook } from "react-icons/fa";
+import emailjs from '@emailjs/browser';
+import Swal from "sweetalert2";
 
-const Contact =()=> {
+const Contact = () => {
+    const handleEmail = (e) => {
+        e.preventDefault();
+        const serviceId = import.meta.env.VITE_serviceId;
+        const templateId = import.meta.env.VITE_templateId;
+        const publicKey = import.meta.env.VITE_publicKey;
+        emailjs.sendForm(serviceId, templateId, e.target, publicKey)
+            .then(() => {
+            Swal.fire({
+                icon: 'success',
+                title: 'Message Sent!',
+                text: 'Thank you for contacting me. I will get back to you soon.',
+            });
+            e.target.reset();
+            }, (error) => {
+            Swal.fire({
+                icon: 'error',
+                title: 'Oops...',
+                text: 'Something went wrong. Please try again later.',
+            });
+            });
+    }
   return (
       <section id="contact"
-          className="text-primaryText my-20 py-16 px-4">
+          className="text-primaryText mt-24 md:mt-0 flex justify-center items-center min-h-screen px-4">
       <div className="container mx-auto px-3">
         <h2 className="text-4xl font-bold text-center mb-4">
           Get In <span className="text-accent">Touch</span>
@@ -42,9 +65,16 @@ const Contact =()=> {
 
             <div>
               <h4 className="text-lg font-semibold mb-2">Follow Me</h4>
-              <div className="flex space-x-4">
-                <a href="#" className="text-Accent text-xl"><FaLinkedin /></a>
-                <a href="#" className="text-Accent text-xl"><FaGithub /></a>
+              <div className="flex space-x-4 text-2xl">
+               <a href="https://github.com/tamzid-molla" target="_blank" rel="noopener noreferrer">
+                         <FaGithub className="text-Accent" />
+                       </a>
+                       <a href="https://www.linkedin.com/in/tamzid-molla-9b5b46371/" target="_blank" rel="noopener noreferrer">
+                         <FaLinkedin  className="text-Accent"/>
+                       </a>
+                       <a href="https://www.facebook.com/monhara.pakhi.549668" target="_blank" rel="noopener noreferrer">
+                         <FaFacebook  className="text-Accent"/>
+                       </a>
                 
               </div>
             </div>
@@ -52,14 +82,15 @@ const Contact =()=> {
 
           {/* Right Side - Contact Form */}
           <div className="bg-cardBackground p-8 rounded-xl">
-            <h3 className="text-2xl font-semibold mb-6">Send Message</h3>
-            <form className="space-y-4">
+                      <h3 className="text-2xl font-semibold mb-6">Send Message</h3>
+                      
+            <form onSubmit={handleEmail} className="space-y-4">
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                <input type="text" placeholder="Enter your name" className="p-3 rounded-lg bg-background border border-[#334155] placeholder-[#94a3b8] text-primaryText" />
-                <input type="email" placeholder="Enter your email" className="p-3 rounded-lg bg-background border border-[#334155] placeholder-[#94a3b8] text-primaryText" />
+                <input type="text" placeholder="Enter your name" name="name" className="p-3 rounded-lg bg-background border border-[#334155] placeholder-[#94a3b8] text-primaryText" />
+                <input type="email" placeholder="Enter your email" name="email" className="p-3 rounded-lg bg-background border border-[#334155] placeholder-[#94a3b8] text-primaryText" />
               </div>
-              <input type="text" placeholder="What's this about?" className="w-full p-3 rounded-lg bg-background border border-[#334155] placeholder-[#94a3b8] text-primaryText" />
-              <textarea rows="5" placeholder="Tell me about your project or just say hello!" className="w-full p-3 rounded-lg bg-background border border-[#334155] placeholder-[#94a3b8] text-primaryText"></textarea>
+              <input type="text" placeholder="What's this about?" name="subject" className="w-full p-3 rounded-lg bg-background border border-[#334155] placeholder-[#94a3b8] text-primaryText" />
+              <textarea rows="5" name="message" placeholder="Tell me about your project or just say hello!" className="w-full p-3 rounded-lg bg-background border border-[#334155] placeholder-[#94a3b8] text-primaryText"></textarea>
               <button type="submit" className="w-full cursor-pointer bg-[#00D3BB] text-primaryText font-semibold py-3 rounded-lg hover:opacity-90">
                 Send Message
               </button>

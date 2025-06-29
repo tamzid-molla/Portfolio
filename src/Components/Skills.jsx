@@ -37,8 +37,9 @@ const Skills = () => {
   ];
 
   return (
-    <section id="skills" className="pt-16 px-5 min-h-screen text-center">
-      <h2 className="text-3xl md:text-4xl mt-20 font-bold mb-4 text-Accent">
+    <section id="skills" className="mt-10 md:mt-0 px-5 flex justify-center items-center min-h-screen text-center">
+      <div className="w-full">
+        <h2 className="text-3xl md:text-4xl mt-20 font-bold mb-4 text-Accent">
         My Skills
       </h2>
       <p className="text-secondaryText mb-12">
@@ -131,6 +132,7 @@ const Skills = () => {
             </div>
           ))}
         </div>
+      </div>
       </div>
     </section>
   );
