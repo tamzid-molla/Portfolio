@@ -69,7 +69,7 @@ const Contact = () => {
                <a href="https://github.com/tamzid-molla" target="_blank" rel="noopener noreferrer">
                          <FaGithub className="text-Accent" />
                        </a>
-                       <a href="https://www.linkedin.com/in/tamzid-molla-9b5b46371/" target="_blank" rel="noopener noreferrer">
+                       <a href="https://www.linkedin.com/in/tamzid-dev" target="_blank" rel="noopener noreferrer">
                          <FaLinkedin  className="text-Accent"/>
                        </a>
                        <a href="https://www.facebook.com/monhara.pakhi.549668" target="_blank" rel="noopener noreferrer">

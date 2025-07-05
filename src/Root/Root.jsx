@@ -17,7 +17,7 @@ const Root = () => {
     });
   }, []);
   return (
-    <div className="">
+    <div className=" overflow-hidden">
       <NavBar></NavBar>
       <Banner />
       <AboutMe />

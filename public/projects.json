@@ -8,7 +8,7 @@
       "techStack": [
         "React", "Tailwind CSS", "Firebase Auth", "Node.js", "Express.js", "MongoDB", "Framer Motion"
       ],
-      "description": "LitShelf is a full-stack reading tracker and virtual bookshelf. Users can log reading progress, add reviews, organize books, and visualize reading stats.",
+      "description": "LitShelf is a MERN stack reading tracker and virtual bookshelf. Users can log reading progress, add reviews, organize books, and visualize reading stats.",
       "liveLink": "https://assignment11-tamzid.surge.sh/",
       "githubLink": "https://github.com/tamzid-molla/LitShelf",
       "challenges": [

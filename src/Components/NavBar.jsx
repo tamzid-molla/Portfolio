@@ -26,7 +26,7 @@ const NavBar = () => {
   );
 
   return (
-    <nav className="shadow-md fixed z-50 w-full">
+    <nav className="fixed z-50 w-full">
       <div className="bg-background">
         <div className="container mx-auto  py-5 flex items-center px-5 justify-between">
         <div className="font_headers">
@@ -55,7 +55,7 @@ const NavBar = () => {
             : "scale-y-0 opacity-0 pointer-events-none"
         }`}
       >
-        <ul className="flex flex-col justify-center items-center text-primaryText gap-5 pt-10">
+        <ul className="flex flex-col justify-center items-center text-primaryText gap-5 py-5">
           {links}
         </ul>
       </div>
